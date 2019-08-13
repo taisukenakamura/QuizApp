@@ -21,7 +21,7 @@
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="YXc-gP-a41">
                                 <rect key="frame" x="10" y="478" width="300" height="80"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="flP-A0-Vh1">
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="flP-A0-Vh1">
                                         <rect key="frame" x="0.0" y="0.0" width="75" height="80"/>
                                         <color key="backgroundColor" red="0.43978793959951817" green="0.82080365180364112" blue="0.8092150441116428" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="45"/>
@@ -32,7 +32,7 @@
                                             <action selector="tappedButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5pD-yJ-yRO"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lzT-Uq-zzQ">
+                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lzT-Uq-zzQ">
                                         <rect key="frame" x="75" y="0.0" width="75" height="80"/>
                                         <color key="backgroundColor" red="0.7458307839890429" green="0.82080365180364112" blue="0.66263218034312499" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="45"/>
@@ -43,7 +43,7 @@
                                             <action selector="tappedButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mNe-Cp-0Db"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cKi-py-BVJ">
+                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cKi-py-BVJ">
                                         <rect key="frame" x="150" y="0.0" width="75" height="80"/>
                                         <color key="backgroundColor" red="0.97770393" green="1" blue="0.87784711650000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="45"/>
@@ -54,7 +54,7 @@
                                             <action selector="tappedButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UOV-vy-HwW"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rMW-9j-RVW">
+                                    <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rMW-9j-RVW">
                                         <rect key="frame" x="225" y="0.0" width="75" height="80"/>
                                         <color key="backgroundColor" red="1" green="0.87855239659999995" blue="0.87997868319999994" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="45"/>
@@ -70,7 +70,7 @@
                                     <constraint firstAttribute="height" constant="80" id="9vM-14-X8F"/>
                                 </constraints>
                             </stackView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="60f-EA-5FH">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="60f-EA-5FH">
                                 <rect key="frame" x="10" y="74" width="300" height="404"/>
                                 <color key="backgroundColor" red="0.76805915404010461" green="0.91895261172758713" blue="0.97625964879989624" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -92,6 +92,7 @@
                     <navigationItem key="navigationItem" id="19M-XQ-PLF"/>
                     <connections>
                         <outlet property="questionText" destination="60f-EA-5FH" id="E8b-Lr-nBk"/>
+                        <outlet property="questionTitle" destination="19M-XQ-PLF" id="4Fo-r9-T14"/>
                         <segue destination="6HZ-63-MSp" kind="show" identifier="showResult" id="lVR-w3-E9v"/>
                     </connections>
                 </viewController>
