@@ -93,6 +93,7 @@
                     <connections>
                         <outlet property="questionText" destination="60f-EA-5FH" id="E8b-Lr-nBk"/>
                         <outlet property="questionTitle" destination="19M-XQ-PLF" id="4Fo-r9-T14"/>
+                        <outlet property="stackViewButton" destination="YXc-gP-a41" id="xuu-zQ-fcz"/>
                         <segue destination="6HZ-63-MSp" kind="show" identifier="showResult" id="lVR-w3-E9v"/>
                     </connections>
                 </viewController>
