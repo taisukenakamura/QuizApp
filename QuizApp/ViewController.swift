@@ -34,6 +34,9 @@ class ViewController: UIViewController {
         super.viewWillDisappear(animated)
         // 遷移元のタイトル
         questionTitle.title = "問題へ"
+       
+      
+        
     }
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -48,7 +51,9 @@ class ViewController: UIViewController {
         // 正誤判定の初期化
         result = []
         // タイトルのリセット
-       questionTitle.title = "第\(questionsCount + 1)問"
+        questionTitle.title = "第\(questionsCount + 1)問"
+        // 問題表示
+        showQuestion()
     }
     // 正誤判定関数
     func checkAnswer(_ selectedNum : Int) {
@@ -156,6 +161,10 @@ class ViewController: UIViewController {
             self.result.append(false)
             // 遷移の実行
             self.performSegue(withIdentifier: "showResult", sender: nil)
+            // ボタンの再度配列
+            for button in self.stackViewButton.arrangedSubviews {
+                button.isHidden = false
+            }
         })
         // 問題数が配列の数を越す際
         if questionsCount >= questions.count - 1 {
