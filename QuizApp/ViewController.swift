@@ -16,7 +16,6 @@ class ViewController: UIViewController {
     // stackViewの配列
     @IBOutlet weak var stackViewButton: UIStackView!
     
-    
     // 問題データ
     let questions : [[String : Any]] = [
         ["question" : "日本の世界遺産『富士山－信仰の対象と芸術の源泉』は、2013年に（ ）として世界遺産登録されました。\n 1. 文化遺産 2. 自然遺産 3. 山岳遺産 4. 伝統遺産",
@@ -34,14 +33,12 @@ class ViewController: UIViewController {
         super.viewWillDisappear(animated)
         // 遷移元のタイトル
         questionTitle.title = "問題へ"
-       
-      
-        
+    
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-      // 問題を表示
-      showQuestion()
+        // 問題を表示
+        showQuestion()
     }
      // 遷移から戻った時にする最初の処理
     override func viewWillAppear(_ animated: Bool) {
@@ -186,11 +183,3 @@ class ViewController: UIViewController {
         checkAnswer(sender.tag)
     }
 }
-
-
-
-
-
-
-
-
